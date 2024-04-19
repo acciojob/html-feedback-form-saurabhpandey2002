@@ -1,36 +1,45 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
-	<style>
-		label {
-            display: block;
-            margin-bottom: 10px;
-        }
-	</style>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-<h2>Feedback Form</h2>
-<form>
-	<label for="name">Name:</label>
-	<input type="text" id="name" name="name" pattern=".{3,50}" title="Name must have 3 to 50 characters" required>
-	<br>
+<!-- the entire body must be written by student -->
+<h1>Feedback Form</h1>
 
-	<label for="portfolio">Portfolio:</label>
-	<input type="url" id="portfolio" name="portfolio" required>
-	<br>
+<form method="post">
+	<label for="name">Name</label>
+	<input type="text" id="name" minlength="3" maxlength="50" required>
 
-	<label for="favColor">Favorite Color:</label>
-	<input type="color" id="favColor" name="favColor">
-	<br>
+	<label for="portfolio">Portfolio</label>
+	<input type="url" id="portfolio" required>
 
-	<label for="likeness">Likeness:</label>
-	<input type="range" id="likeness" name="likeness" min="1" max="100">
-	<br>
+	<label for="favColor">Color</label>
+	<input type="color" id="favColor">
 
-	<input type="submit" value="Submit">
+	<label for="likeness">Range</label>
+	<input type="range" id="likeness" min="1" max="100">
+
+
+	<button type="submit">submit</button>
 </form>
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="./script.js">
+</script>
+
 </body>
 
 </html>
